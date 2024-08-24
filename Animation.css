@@ -1,0 +1,274 @@
+/*  التكليف الأول*/
+/* * {
+    box-sizing: border-box;
+}
+
+body div {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    border-radius: 50%;
+    border: 5px solid #eb2467;
+    border-left-color: transparent;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: loop;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+}
+body div::before {
+    content: "";
+    width: 135%;
+    height: 135%;
+    position: absolute;
+    border-radius: 50%;
+    border: 5px solid #2ca7ff;
+    border-right-color: transparent;
+}
+body div::after {
+    content: "";
+    width: 170%;
+    height: 170%;
+    position: absolute;
+    border-radius: 50%;
+    border: 5px solid #fba200;
+    border-top-color: transparent;
+
+}
+@keyframes loop {
+    0%{
+        transform: translate(-50%,-50%) rotate(0);
+    }
+    
+    100% {
+        transform: translate(-50%,-50%) rotate(360deg);
+    }
+}
+body div:hover {
+    animation-play-state: paused;
+} */
+/*   التكليف الثالث*/
+/* * {
+    box-sizing: border-box;
+}
+.A {
+    width: 600px;
+    height: 600px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.B {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.a,
+.b,
+.c {
+    position: absolute;
+    border-radius: 50%;
+    animation-name: loop;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.a {
+    height: 100%;
+    width: 100%;
+
+    border: 5px solid #2393f9;
+    border-top-color: transparent;
+}
+.b {
+    width: 135%;
+    height: 135%;
+    border: 5px solid #f19a00;
+    border-top-color: transparent;
+    animation-delay: 0.4s;
+}
+.c {
+    width: 170%;
+    height: 170%;
+    border: 5px solid black;
+    border-top-color: transparent;
+    animation-delay: 0.8s;
+}
+@keyframes loop {
+    to {
+        transform: rotate(360deg);
+    }
+}
+.B:hover div {
+    animation-play-state:paused;
+} */
+/*  التكليف الثالث*/
+/* span {
+    width: 50px;
+    height: 50px;
+    background-color: #eee;
+    border: black 5px solid ;
+    border-left-color: transparent;
+    border-radius: 50%;
+   position: absolute;
+   left:50%;
+   top:50%;
+   transform: translate(-50%,-50%);
+   animation-name: loop;
+   animation-duration: 1s;
+   animation-iteration-count: infinite;
+   animation-timing-function: linear;
+   
+}
+@keyframes loop {
+    to{
+        transform: translate(-50%,-50%) rotate(-1Turn);
+    }
+} */
+/*  التكليف الاخير*/
+* {
+    box-sizing: border-box;
+}
+.co {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.box {
+    position: relative;
+    padding: 15px;
+    width: 500px;
+    height: 500px;
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+
+    grid-template-areas:
+        "one one one one one one one one . sex sex . . . . ."
+        "two two . . . . . . . sex sex . . . . ."
+        "two two . . . . . . . sex sex . . . . ."
+        " three three three three three three three three . seven seven . . . . ."
+        "four four . . . . . . . seven seven . . . . ."
+        "four four . . . . . . . seven seven . . . . ."
+        "five five five five five five five five . eight eight eight eight eight eight eight";
+}
+.box::before,
+.box::after {
+    content: "";
+    width: 35.5px;
+    height: 35.5px;
+    position: absolute;
+    background-color: #fea604;
+    animation-iteration-count: 1;
+    animation-direction: linear;
+    animation-fill-mode: forwards;
+}
+.box::before {
+    animation-duration: 4s;
+    left: 40.5%;
+    top: 5.2%;
+    animation-name: EE;
+
+    animation-delay: 5s;
+}
+.box::after {
+    animation-duration: 3s;
+    right: 5.2%;
+    top: 75.7%;
+    visibility: hidden;
+    animation-name: LL;
+    animation-delay: 1s;
+}
+@keyframes EE {
+    0% {
+        transform: translate(0, 0);
+    }
+    10% {
+        transform: translate(-495%, 0);
+    }
+    20% {
+        transform: translate(-495%, 495%);
+    }
+    30% {
+        transform: translate(0, 495%);
+    }
+    40% {
+        transform: translate(-495%, 495%);
+    }
+    50% {
+        transform: translate(-495%, 990%);
+    }
+    60% {
+        transform: translate(0, 990%);
+    }
+    70% {
+        transform: translate(-495%, 990%);
+    }
+    80% {
+        transform: translate(-495%, 0);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+@keyframes LL {
+    25% {
+        visibility: visible;
+    }
+    35% {
+        transform: translate(-415%, 0%);
+    }
+    55% {
+        transform: translate(-415%, -1000%);
+    }
+    60% {
+        transform: translate(-415%, -1000%);
+        opacity: 100%;
+    }
+    100% {
+        transform: translate(-415%, -1000%);
+        opacity: 0;
+    }
+}
+.box div {
+    background-color: #323234;
+    outline: 1px solid #323234;
+    border: 1px solid #323234;
+}
+.one {
+    grid-area: one;
+}
+.two {
+    grid-area: two;
+}
+.three {
+    grid-area: three;
+}
+.four {
+    grid-area: four;
+}
+.five {
+    grid-area: five;
+}
+.sex {
+    grid-area: sex;
+}
+.seven {
+    grid-area: seven;
+}
+.eight {
+    grid-area: eight;
+}
