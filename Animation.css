@@ -18,9 +18,9 @@
     grid-template-rows: repeat(8, 1fr);
 
     grid-template-areas:
-        "one one one one one one one one . sex sex . . . . ."
-        "two two . . . . . . . sex sex . . . . ."
-        "two two . . . . . . . sex sex . . . . ."
+        "one one one one one one one one . six six . . . . ."
+        "two two . . . . . . . six six . . . . ."
+        "two two . . . . . . . six six . . . . ."
         " three three three three three three three three . seven seven . . . . ."
         "four four . . . . . . . seven seven . . . . ."
         "four four . . . . . . . seven seven . . . . ."
@@ -124,8 +124,8 @@
 .five {
     grid-area: five;
 }
-.sex {
-    grid-area: sex;
+.six {
+    grid-area: six;
 }
 .seven {
     grid-area: seven;
